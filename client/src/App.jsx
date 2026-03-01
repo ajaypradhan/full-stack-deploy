@@ -5,7 +5,7 @@ const App = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/message")
+    fetch("http://187.77.187.252:4000/api/message")
       .then((res) => res.json())
       .then((data) => setData(data?.message))
       .catch((err) => console.error(err));
