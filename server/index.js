@@ -16,6 +16,6 @@ app.get("/api/message", (req, res) => {
   res.send({ message: "Hello spoxtale test server" });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
